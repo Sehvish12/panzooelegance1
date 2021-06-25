@@ -1,0 +1,118 @@
+﻿@model IEnumerable<PanzooElegance.Models.Index>
+@using PanzooElegance.Models
+@{
+    ApplicationDbContext db = new ApplicationDbContext();
+}
+   <div class="tp-fullscreen-container revolution">
+            <div class="tp-fullscreen">
+                <ul>
+                    <li data-transition="fade">
+                      
+                        <img src="~/Content/images/6f9ba73b-3127-4e18-8f5e-24643746d4b1.jpg" />" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" />
+                        <h1 class="tp-caption large sfr" data-x="30" data-y="263" data-speed="900" data-start="800" data-easing="Sine.easeOut"><a style="color:black">Panzoo Elegance</a></h1>
+                        <div class="tp-caption medium sfr" data-x="30" data-y="348" data-speed="900" data-start="1500" data-easing="Sine.easeOut"><a style="color:white"><b>The Complete Furnishing Store</b></a>
+                            <br />
+                        </div>
+                    </li>
+                    <li data-transition="fade">
+                        <img src="~/Content/images/WhatsApp.jpeg" />ider-bg2.jpg" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" />
+                        <div class="tp-caption large text-center sfl" data-x="center" data-y="283" data-speed="900" data-start="800" data-easing="Sine.easeOut"><a style="color:darkorange">Art Of Stylish</a></div>
+                        <div class="tp-caption large text-center sfr" data-x="center" data-y="363" data-speed="900" data-start="1500" data-easing="Sine.easeOut"><a style="color:darkorange">Living</a></div>
+                    </li>
+                    <li data-transition="fade">
+                        <img src="~/Content/images/1232167a-a683-4f49-bac7-9983b1406adc.jpg" />art/slider-bg3.jpg" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" />
+                        <div class="tp-caption large text-center sfb" data-x="center" data-y="293" data-speed="900" data-start="800" data-easing="Sine.easeOut"><a style="color:darkorange">Let the floor speaks</a></div>
+                        <div class="tp-caption large text-center sfr" data-x="center" data-y="363" data-speed="900" data-start="1500" data-easing="Sine.easeOut"><a style="color:darkorange">your Class</a></div>
+                    </li>
+                    
+                </ul>
+                <div class="tp-bannertimer tp-bottom"></div>
+            </div>
+            <!-- /.tp-fullscreen-container -->
+        </div>
+        <!-- /.revolution -->
+        <section id="conceptual" class="light-wrapper">
+    <div class="container inner">
+        <h3 class="section-title text-center">Gallery</h3>
+        <p class="text-center">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+          @foreach (var item in Model)
+          {
+            <div class="col-md-4">
+                <div class="divide20"></div>
+                <div class="cbp-panel">
+                    <div class="cbp cbp-onepage-grid">
+                        <div class="cbp-item">
+                            <a class="cbp-caption fancybox-media" data-rel="portfolio" href="~/Areas/Admin/Content/images/@item.Image">
+                                <div class="cbp-caption-defaultWrap"> <img src="~/Areas/Admin/Content/images/@item.Image" alt="" /> </div>
+                                <div class="cbp-caption-activeWrap">
+                                    <div class="cbp-l-caption-alignCenter">
+                                        <div class="cbp-l-caption-body">
+                                            <div class="cbp-l-caption-title"><span class="cbp-plus"></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/.cbp-caption-activeWrap -->
+                            </a>
+                        </div>
+                        <!--/.cbp-item -->
+                    </div>
+                    <!--/.cbp -->
+                </div>
+            </div>
+          }
+      
+        <!--/.cbp-panel -->
+    </div>
+    <!-- /.container -->
+</section>
+        <!-- /.light-wrapper -->
+<div class="light-wrapper">
+    <div class="col-image">
+        <div class="bg-wrapper col-md-6">
+            <div class="bg-holder" style="background-image: url(style/images/art/about.jpg);"></div>
+        </div>
+        <!--/.bg-wrapper -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-md-offset-7 inner-col">
+                    <h3 class="section-title">A little about me</h3>
+                    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec ullamcorper nulla non metus auctor fringilla. Etiam porta sem malesuada magna mollis euismod.</p>
+                    <ul class="progress-list">
+                        <li>
+                            <p>Photoshop <em>90%</em></p>
+                            <div class="progress plain">
+                                <div class="bar" data-width="90"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>Final Cut <em>80%</em></p>
+                            <div class="progress plain">
+                                <div class="bar" data-width="80"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>Studio Photography <em>85%</em></p>
+                            <div class="progress plain">
+                                <div class="bar" data-width="85"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>Motion Video <em>75%</em></p>
+                            <div class="progress plain">
+                                <div class="bar" data-width="75"></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- /.progress-list -->
+                </div>
+                <!--/column -->
+            </div>
+            <!--/.row -->
+        </div>
+        <!--/.container -->
+    </div>
+    <!--/.col-image -->
+</div>
+<!-- /.light-wrapper -->
+
+        
